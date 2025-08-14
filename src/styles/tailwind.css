@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #8B4513; /* warm terracotta warmth, appetite stimulation */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #6B8E5A; /* sage green sophistication, natural ingredient connection */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #D4AF37; /* gold premium moments, special occasion highlighting */
+    --color-accent-foreground: #2C2C2C; /* charcoal */
+    
+    /* Background Colors */
+    --color-background: #FAF7F2; /* cream canvas warmth, comfortable reading environment */
+    --color-foreground: #2C2C2C; /* charcoal readability, sophisticated contrast without stark black */
+    
+    /* Surface Colors */
+    --color-card: #F5F1E8; /* subtle depth layering, card elevation without harshness */
+    --color-card-foreground: #2C2C2C; /* charcoal */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #2C2C2C; /* charcoal */
+    
+    /* Muted Colors */
+    --color-muted: #F5F1E8; /* subtle depth layering */
+    --color-muted-foreground: #6B6B6B; /* clear hierarchy maintenance, supporting information clarity */
+    
+    /* Border and Input */
+    --color-border: #E5E5E5; /* light gray */
+    --color-input: #FFFFFF; /* white */
+    --color-ring: #D4AF37; /* gold */
+    
+    /* Status Colors */
+    --color-success: #5D8A3A; /* natural confirmation, reservation completion satisfaction */
+    --color-success-foreground: #FFFFFF; /* white */
+    --color-warning: #B8860B; /* gentle urgency, limited availability without panic */
+    --color-warning-foreground: #FFFFFF; /* white */
+    --color-error: #A0522D; /* helpful concern, form guidance with warmth */
+    --color-error-foreground: #FFFFFF; /* white */
+    --color-destructive: #A0522D; /* helpful concern */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Brand Specific Colors */
+    --color-brand-goldenrod: #DAA520; /* goldenrod */
+    --color-brand-peru: #CD853F; /* peru */
+    --color-brand-beige: #F5F5DC; /* beige */
+    --color-brand-dark-goldenrod: #B8860B; /* dark goldenrod */
+    --color-brand-dark-sea-green: #8FBC8F; /* dark sea green */
+    
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Spacing Scale (Golden Ratio) */
+    --spacing-xs: 8px;
+    --spacing-sm: 13px;
+    --spacing-md: 21px;
+    --spacing-lg: 34px;
+    --spacing-xl: 55px;
+    
+    /* Shadows */
+    --shadow-brand: 0 4px 20px rgba(184, 134, 11, 0.15);
+    --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.08);
+    
+    /* Border Radius */
+    --radius: 8px;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+.btn-primary  {
+    @apply bg-primary text-primary-foreground transition-all duration-300 ease-out;
+  }
+.btn-secondary  {
+    @apply bg-secondary text-secondary-foreground transition-all duration-300 ease-out;
+  }
+.btn-accent  {
+    @apply bg-accent text-accent-foreground transition-all duration-300 ease-out;
+  }
+  
+  .card-elevation {
+    box-shadow: var(--shadow-brand);
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .card-elevation:hover {
+    @apply transform scale-105;
+    box-shadow: var(--shadow-brand);
+  }
+  
+  .text-brand-primary {
+    color: var(--color-brand-dark-goldenrod);
+  }
+  
+  .text-brand-secondary {
+    color: var(--color-brand-dark-sea-green);
+  }
+  
+  .bg-brand-warm {
+    background-color: var(--color-brand-beige);
+  }
+  
+  .animate-fade-in {
+    @apply opacity-0 transform translate-y-4;
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      @apply opacity-100 transform translate-y-0;
+    }
+  }
+  
+  .animate-scale-in {
+    @apply transform scale-90 opacity-0;
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+  
+  @keyframes scaleIn {
+    to {
+      @apply transform scale-100 opacity-100;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .golden-ratio-spacing {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .culinary-shadow {
+    box-shadow: var(--shadow-brand);
+  }
+  
+  .appetite-gradient {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  }
+  
+  .warm-overlay {
+    background: linear-gradient(rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0.2));
+  }
+}
