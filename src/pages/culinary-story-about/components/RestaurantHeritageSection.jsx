@@ -35,7 +35,7 @@ const RestaurantHeritageSection = () => {
       year: "2021",
       title: "Grand Opening",
       description:
-        "Savoria opened its doors to the community, immediately becoming a beloved neighborhood gathering place for memorable dining experiences.",
+        "bigbro opened its doors to the community, immediately becoming a beloved neighborhood gathering place for memorable dining experiences.",
       image:
         "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
       milestone: "Official Launch",
@@ -44,7 +44,7 @@ const RestaurantHeritageSection = () => {
       year: "2022",
       title: "Recognition & Growth",
       description:
-        "Our commitment to excellence earned recognition from food critics and loyal patrons, establishing Savoria as a culinary destination.",
+        "Our commitment to excellence earned recognition from food critics and loyal patrons, establishing bigbro as a culinary destination.",
       image:
         "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800",
       milestone: "Awards & Acclaim",
@@ -109,7 +109,7 @@ const RestaurantHeritageSection = () => {
     {
       title: "Authentic Hospitality",
       description:
-        "Our team creates warm, welcoming experiences that make every guest feel like part of the Savoria family.",
+        "Our team creates warm, welcoming experiences that make every guest feel like part of the bigbro family.",
       icon: "Smile",
     },
   ];
@@ -130,7 +130,7 @@ const RestaurantHeritageSection = () => {
 
           <p className="text-xl text-muted-foreground font-body max-w-3xl mx-auto leading-relaxed">
             From a passionate dream to a beloved neighborhood destination,
-            discover the journey that shaped Savoria into the culinary
+            discover the journey that shaped bigbro into the culinary
             experience it is today.
           </p>
         </div>

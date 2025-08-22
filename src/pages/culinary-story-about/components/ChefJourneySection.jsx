@@ -10,7 +10,7 @@ const ChefJourneySection = () => {
       "https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg?auto=compress&cs=tinysrgb&w=800",
     quote:
       "Cooking is not just about feeding the body; it's about nourishing the soul and creating memories that last a lifetime.",
-    journey: `My culinary journey began in my grandmother's kitchen in Valencia, where I learned that food is love made visible. After training at Le Cordon Bleu Paris and working in Michelin-starred restaurants across Europe, I discovered my true calling: bringing authentic flavors to life while honoring traditional techniques.\n\nAt Savoria, we believe every ingredient has a story to tell. My philosophy centers on respecting the natural essence of each component while elevating it through careful technique and passionate presentation. Every dish we create is a conversation between tradition and innovation.`,
+    journey: `My culinary journey began in my grandmother's kitchen in Valencia, where I learned that food is love made visible. After training at Le Cordon Bleu Paris and working in Michelin-starred restaurants across Europe, I discovered my true calling: bringing authentic flavors to life while honoring traditional techniques.\n\nAt bigbro, we believe every ingredient has a story to tell. My philosophy centers on respecting the natural essence of each component while elevating it through careful technique and passionate presentation. Every dish we create is a conversation between tradition and innovation.`,
     achievements: [
       "Le Cordon Bleu Paris Graduate (2015)",
       "James Beard Rising Chef Nominee (2020)",
@@ -29,7 +29,7 @@ const ChefJourneySection = () => {
             <div className="relative overflow-hidden rounded-2xl shadow-brand">
               <Image
                 src={chefData?.image}
-                alt={`${chefData?.name} - Executive Chef at Savoria`}
+                alt={`${chefData?.name} - Executive Chef at bigbro`}
                 className="w-full h-[500px] lg:h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>

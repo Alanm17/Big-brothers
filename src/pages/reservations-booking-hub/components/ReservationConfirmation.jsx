@@ -1,21 +1,25 @@
-import React from 'react';
-import Button from '../../../components/ui/Button';
-import Icon from '../../../components/AppIcon';
+import React from "react";
+import Button from "../../../components/ui/Button";
+import Icon from "../../../components/AppIcon";
 
-const ReservationConfirmation = ({ reservationData, onNewReservation, onClose }) => {
+const ReservationConfirmation = ({
+  reservationData,
+  onNewReservation,
+  onClose,
+}) => {
   const formatDate = (date) => {
-    return date?.toLocaleDateString('en-US', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+    return date?.toLocaleDateString("en-US", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
   };
 
   const formatTime = (time) => {
-    const [hours, minutes] = time?.split(':');
+    const [hours, minutes] = time?.split(":");
     const hour = parseInt(hours);
-    const ampm = hour >= 12 ? 'PM' : 'AM';
+    const ampm = hour >= 12 ? "PM" : "AM";
     const displayHour = hour % 12 || 12;
     return `${displayHour}:${minutes} ${ampm}`;
   };
@@ -33,7 +37,7 @@ const ReservationConfirmation = ({ reservationData, onNewReservation, onClose })
           Reservation Confirmed!
         </h2>
         <p className="text-muted-foreground">
-          Thank you for choosing Savoria. We look forward to serving you.
+          Thank you for choosing bigbro. We look forward to serving you.
         </p>
       </div>
       {/* Confirmation Details */}
@@ -81,7 +85,8 @@ const ReservationConfirmation = ({ reservationData, onNewReservation, onClose })
               <div>
                 <div className="text-sm text-muted-foreground">Party Size</div>
                 <div className="font-medium text-foreground">
-                  {reservationData?.partySize} {reservationData?.partySize === '1' ? 'Guest' : 'Guests'}
+                  {reservationData?.partySize}{" "}
+                  {reservationData?.partySize === "1" ? "Guest" : "Guests"}
                 </div>
               </div>
             </div>
@@ -128,8 +133,10 @@ const ReservationConfirmation = ({ reservationData, onNewReservation, onClose })
         </div>
 
         {/* Additional Details */}
-        {(reservationData?.occasion || reservationData?.seatingPreference !== 'no-preference' || 
-          reservationData?.dietaryRestrictions || reservationData?.specialRequests) && (
+        {(reservationData?.occasion ||
+          reservationData?.seatingPreference !== "no-preference" ||
+          reservationData?.dietaryRestrictions ||
+          reservationData?.specialRequests) && (
           <div className="mt-6 pt-6 border-t border-border">
             <h4 className="text-sm font-medium text-foreground mb-3 uppercase tracking-wide">
               Additional Information
@@ -137,32 +144,56 @@ const ReservationConfirmation = ({ reservationData, onNewReservation, onClose })
             <div className="space-y-2 text-sm">
               {reservationData?.occasion && (
                 <div className="flex items-center space-x-2">
-                  <Icon name="Heart" size={16} className="text-muted-foreground" />
+                  <Icon
+                    name="Heart"
+                    size={16}
+                    className="text-muted-foreground"
+                  />
                   <span className="text-muted-foreground">Occasion:</span>
-                  <span className="text-foreground">{reservationData?.occasion}</span>
+                  <span className="text-foreground">
+                    {reservationData?.occasion}
+                  </span>
                 </div>
               )}
-              {reservationData?.seatingPreference !== 'no-preference' && (
+              {reservationData?.seatingPreference !== "no-preference" && (
                 <div className="flex items-center space-x-2">
-                  <Icon name="MapPin" size={16} className="text-muted-foreground" />
+                  <Icon
+                    name="MapPin"
+                    size={16}
+                    className="text-muted-foreground"
+                  />
                   <span className="text-muted-foreground">Seating:</span>
                   <span className="text-foreground">
-                    {reservationData?.seatingPreference?.replace('-', ' ')?.replace(/\b\w/g, l => l?.toUpperCase())}
+                    {reservationData?.seatingPreference
+                      ?.replace("-", " ")
+                      ?.replace(/\b\w/g, (l) => l?.toUpperCase())}
                   </span>
                 </div>
               )}
               {reservationData?.dietaryRestrictions && (
                 <div className="flex items-start space-x-2">
-                  <Icon name="AlertCircle" size={16} className="text-muted-foreground mt-0.5" />
+                  <Icon
+                    name="AlertCircle"
+                    size={16}
+                    className="text-muted-foreground mt-0.5"
+                  />
                   <span className="text-muted-foreground">Dietary:</span>
-                  <span className="text-foreground">{reservationData?.dietaryRestrictions}</span>
+                  <span className="text-foreground">
+                    {reservationData?.dietaryRestrictions}
+                  </span>
                 </div>
               )}
               {reservationData?.specialRequests && (
                 <div className="flex items-start space-x-2">
-                  <Icon name="MessageSquare" size={16} className="text-muted-foreground mt-0.5" />
+                  <Icon
+                    name="MessageSquare"
+                    size={16}
+                    className="text-muted-foreground mt-0.5"
+                  />
                   <span className="text-muted-foreground">Notes:</span>
-                  <span className="text-foreground">{reservationData?.specialRequests}</span>
+                  <span className="text-foreground">
+                    {reservationData?.specialRequests}
+                  </span>
                 </div>
               )}
             </div>
@@ -177,19 +208,35 @@ const ReservationConfirmation = ({ reservationData, onNewReservation, onClose })
         </h4>
         <div className="space-y-2 text-sm text-muted-foreground">
           <div className="flex items-start space-x-2">
-            <Icon name="Clock" size={14} className="text-accent mt-0.5 flex-shrink-0" />
+            <Icon
+              name="Clock"
+              size={14}
+              className="text-accent mt-0.5 flex-shrink-0"
+            />
             <span>Please arrive 10 minutes before your reservation time</span>
           </div>
           <div className="flex items-start space-x-2">
-            <Icon name="Phone" size={14} className="text-accent mt-0.5 flex-shrink-0" />
+            <Icon
+              name="Phone"
+              size={14}
+              className="text-accent mt-0.5 flex-shrink-0"
+            />
             <span>For changes or cancellations, call us at (555) 123-4567</span>
           </div>
           <div className="flex items-start space-x-2">
-            <Icon name="Car" size={14} className="text-accent mt-0.5 flex-shrink-0" />
+            <Icon
+              name="Car"
+              size={14}
+              className="text-accent mt-0.5 flex-shrink-0"
+            />
             <span>Complimentary valet parking available after 6 PM</span>
           </div>
           <div className="flex items-start space-x-2">
-            <Icon name="Shirt" size={14} className="text-accent mt-0.5 flex-shrink-0" />
+            <Icon
+              name="Shirt"
+              size={14}
+              className="text-accent mt-0.5 flex-shrink-0"
+            />
             <span>Smart casual dress code preferred</span>
           </div>
         </div>
@@ -227,7 +274,9 @@ const ReservationConfirmation = ({ reservationData, onNewReservation, onClose })
           </div>
           <div className="flex items-center space-x-2">
             <Icon name="Mail" size={16} className="text-muted-foreground" />
-            <span className="text-foreground font-medium">reservations@savoria.com</span>
+            <span className="text-foreground font-medium">
+              reservations@bigbro.com
+            </span>
           </div>
         </div>
       </div>

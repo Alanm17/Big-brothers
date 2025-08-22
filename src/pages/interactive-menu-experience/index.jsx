@@ -413,10 +413,10 @@ const InteractiveMenuExperience = () => {
   return (
     <>
       <Helmet>
-        <title>Interactive Menu Experience - Savoria Restaurant</title>
+        <title>Interactive Menu Experience - bigbro Restaurant</title>
         <meta
           name="description"
-          content="Explore Savoria's exquisite menu with detailed descriptions, wine pairings, and dietary accommodations. Discover our seasonal specialties and special occasion menus."
+          content="Explore bigbro's exquisite menu with detailed descriptions, wine pairings, and dietary accommodations. Discover our seasonal specialties and special occasion menus."
         />
         <meta
           name="keywords"
@@ -501,7 +501,7 @@ const InteractiveMenuExperience = () => {
         <section className="py-16 bg-gradient-to-r from-primary to-accent">
           <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-              Ready to Experience Savoria?
+              Ready to Experience bigbro?
             </h2>
             <p className="text-xl text-white/90 font-body mb-8">
               Reserve your table today and embark on a culinary journey that

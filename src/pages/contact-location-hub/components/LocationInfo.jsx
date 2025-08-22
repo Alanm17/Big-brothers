@@ -27,9 +27,9 @@ const LocationInfo = () => {
     {
       icon: 'Mail',
       title: 'Email',
-      primary: 'hello@savoria.com',
+      primary: 'hello@bigbro.com',
       secondary: 'General inquiries',
-      action: 'mailto:hello@savoria.com',
+      action: 'mailto:hello@bigbro.com',
       actionText: 'Send Email'
     },
     {
@@ -88,7 +88,7 @@ const LocationInfo = () => {
     <div className="bg-card rounded-xl shadow-brand overflow-hidden">
       {/* Header */}
       <div className="bg-gradient-to-r from-primary to-accent p-6 text-white">
-        <h2 className="text-3xl font-heading font-bold mb-2">Visit Savoria</h2>
+        <h2 className="text-3xl font-heading font-bold mb-2">Visit bigbro</h2>
         <p className="text-white/90 leading-relaxed">
           Located in the heart of downtown, we're easily accessible by car or public transit
         </p>
@@ -194,7 +194,7 @@ const LocationInfo = () => {
                     width="100%"
                     height="100%"
                     loading="lazy"
-                    title="Savoria Restaurant Location"
+                    title="bigbro Restaurant Location"
                     referrerPolicy="no-referrer-when-downgrade"
                     src="https://www.google.com/maps?q=40.7589,-73.9851&z=15&output=embed"
                     className="border-0"

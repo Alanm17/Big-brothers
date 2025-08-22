@@ -9,7 +9,7 @@ const InstagramFeed = () => {
       id: 1,
       image:
         "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=400&fit=crop",
-      caption: "Fresh truffle pasta made with love ✨ #SavoriaExperience",
+      caption: "Fresh truffle pasta made with love ✨ #bigbroExperience",
       likes: 234,
       timestamp: "2 hours ago",
     },
@@ -25,7 +25,7 @@ const InstagramFeed = () => {
       id: 3,
       image:
         "https://images.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg?w=400&h=400&fit=crop",
-      caption: "Celebrating another beautiful evening at Savoria 🥂",
+      caption: "Celebrating another beautiful evening at bigbro 🥂",
       likes: 312,
       timestamp: "1 day ago",
     },
@@ -48,7 +48,7 @@ const InstagramFeed = () => {
           </div>
           <div>
             <h3 className="text-lg font-heading font-semibold text-foreground">
-              @savoria_restaurant
+              @bigbro_restaurant
             </h3>
             <p className="text-sm text-muted-foreground">
               Follow us for daily updates

@@ -24,7 +24,7 @@ const Footer = () => {
   const contactInfo = {
     address: "123 Culinary Street, Foodie District, FC 12345",
     phone: "(555) 123-FOOD",
-    email: "hello@savoria.com",
+    email: "hello@bigbro.com",
     hours: {
       weekdays: "Tuesday - Thursday: 5:00 PM - 10:00 PM",
       weekend: "Friday - Saturday: 5:00 PM - 11:00 PM",
@@ -45,7 +45,7 @@ const Footer = () => {
                 <Icon name="ChefHat" size={28} color="white" />
               </div>
               <div>
-                <h3 className="text-2xl font-heading font-bold">Savoria</h3>
+                <h3 className="text-2xl font-heading font-bold">bigbro</h3>
                 <p className="text-sm text-white/70">Restaurant</p>
               </div>
             </div>
@@ -215,7 +215,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-6">
               <p className="text-white/60 font-body text-sm">
-                © {currentYear} Savoria Restaurant. All rights reserved.
+                © {currentYear} bigbro Restaurant. All rights reserved.
               </p>
               <div className="flex items-center space-x-4">
                 <button className="text-white/60 hover:text-accent font-body text-sm transition-colors duration-200">

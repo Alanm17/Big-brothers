@@ -18,7 +18,7 @@ const GalleryHeader = () => {
         </h1>
 
         <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
-          Immerse yourself in the visual story of Savoria through our curated
+          Immerse yourself in the visual story of bigbro through our curated
           collection of culinary artistry, dining atmosphere, and memorable
           moments that define our restaurant experience.
         </p>

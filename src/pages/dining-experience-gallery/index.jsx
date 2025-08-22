@@ -67,7 +67,7 @@ const DiningExperienceGallery = () => {
       categoryName: "Food Artistry",
       src: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&h=800&fit=crop",
       alt: "Signature cocktail with garnish",
-      title: "Signature Savoria Martini",
+      title: "Signature bigbro Martini",
       description:
         "Our house special martini with premium gin, dry vermouth, and signature olive blend",
       chef: "Mixologist Alex Rivera",
@@ -296,7 +296,7 @@ const DiningExperienceGallery = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Join us at Savoria and become part of our visual story. Every meal
+              Join us at bigbro and become part of our visual story. Every meal
               is an opportunity to create beautiful memories worth sharing.
             </p>
 
@@ -324,14 +324,14 @@ const DiningExperienceGallery = () => {
                   <Icon name="ChefHat" size={24} color="white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-heading font-bold">Savoria</h3>
+                  <h3 className="text-xl font-heading font-bold">bigbro</h3>
                   <p className="text-sm opacity-80">Restaurant</p>
                 </div>
               </div>
               <p className="text-background/80 leading-relaxed mb-4">
                 Where every meal tells a story and every moment becomes a
                 cherished memory. Experience the artistry of culinary excellence
-                at Savoria.
+                at bigbro.
               </p>
               <div className="flex items-center space-x-4">
                 <Icon
@@ -397,7 +397,7 @@ const DiningExperienceGallery = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="Mail" size={16} />
-                  <span className="text-sm">hello@savoria.com</span>
+                  <span className="text-sm">hello@bigbro.com</span>
                 </div>
               </div>
             </div>
@@ -405,7 +405,7 @@ const DiningExperienceGallery = () => {
 
           <div className="border-t border-background/20 mt-8 pt-8 text-center">
             <p className="text-background/60 text-sm">
-              © {new Date()?.getFullYear()} Savoria Restaurant. All rights
+              © {new Date()?.getFullYear()} bigbro Restaurant. All rights
               reserved.
             </p>
           </div>

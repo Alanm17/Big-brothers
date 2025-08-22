@@ -13,7 +13,7 @@ const SocialProofSection = () => {
       image:
         "https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg?auto=compress&cs=tinysrgb&w=800",
       rating: 5,
-      review: `Savoria exceeded every expectation I had. Chef Isabella's attention to detail and passion for quality ingredients shines through in every dish. The seasonal menu perfectly captures the essence of California cuisine with Mediterranean influences.\n\nThe service was impeccable, and the atmosphere strikes the perfect balance between elegant and welcoming. This is exactly what neighborhood dining should be—exceptional food in a warm, inviting setting.`,
+      review: `bigbro exceeded every expectation I had. Chef Isabella's attention to detail and passion for quality ingredients shines through in every dish. The seasonal menu perfectly captures the essence of California cuisine with Mediterranean influences.\n\nThe service was impeccable, and the atmosphere strikes the perfect balance between elegant and welcoming. This is exactly what neighborhood dining should be—exceptional food in a warm, inviting setting.`,
       date: "December 2024",
       platform: "Food & Wine Blog",
       verified: true,
@@ -26,7 +26,7 @@ const SocialProofSection = () => {
       image:
         "https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg?auto=compress&cs=tinysrgb&w=800",
       rating: 5,
-      review: `I've been dining at Savoria since they opened, and they continue to impress me with their consistency and innovation. The staff knows my preferences, and Chef Isabella often surprises me with off-menu creations that perfectly match my taste.\n\nWhat sets Savoria apart is their genuine care for the community. They source locally, support other small businesses, and create a space where neighbors become friends over incredible food.`,
+      review: `I've been dining at bigbro since they opened, and they continue to impress me with their consistency and innovation. The staff knows my preferences, and Chef Isabella often surprises me with off-menu creations that perfectly match my taste.\n\nWhat sets bigbro apart is their genuine care for the community. They source locally, support other small businesses, and create a space where neighbors become friends over incredible food.`,
       date: "November 2024",
       platform: "Google Reviews",
       verified: true,
@@ -39,7 +39,7 @@ const SocialProofSection = () => {
       image:
         "https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg?auto=compress&cs=tinysrgb&w=800",
       rating: 5,
-      review: `Savoria catered our company's annual celebration, and the experience was flawless from start to finish. The team worked with us to create a custom menu that impressed our clients and colleagues alike.\n\nThe presentation was stunning, the flavors were exceptional, and the service was professional yet warm. Several attendees have already asked for Savoria's contact information for their own events.`,
+      review: `bigbro catered our company's annual celebration, and the experience was flawless from start to finish. The team worked with us to create a custom menu that impressed our clients and colleagues alike.\n\nThe presentation was stunning, the flavors were exceptional, and the service was professional yet warm. Several attendees have already asked for bigbro's contact information for their own events.`,
       date: "October 2024",
       platform: "Yelp",
       verified: true,
@@ -66,7 +66,7 @@ const SocialProofSection = () => {
       title: "Best New Neighborhood Restaurants",
       date: "2024",
       quote:
-        "Savoria brings sophisticated dining to the neighborhood level with exceptional results.",
+        "bigbro brings sophisticated dining to the neighborhood level with exceptional results.",
       logo: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=200",
       type: "Feature Article",
     },
@@ -84,7 +84,7 @@ const SocialProofSection = () => {
       title: "Farm-to-Table Excellence",
       date: "2023",
       quote:
-        "Savoria sets the standard for responsible sourcing and environmental consciousness.",
+        "bigbro sets the standard for responsible sourcing and environmental consciousness.",
       logo: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=200",
       type: "Sustainability Feature",
     },
@@ -148,25 +148,25 @@ const SocialProofSection = () => {
             className="text-accent mx-auto mb-6"
           />
           <h3 className="text-2xl lg:text-3xl font-heading font-bold text-foreground mb-4">
-            Share Your Savoria Story
+            Share Your bigbro Story
           </h3>
           <p className="text-lg text-muted-foreground font-body max-w-3xl mx-auto leading-relaxed mb-8">
             We love hearing from our guests! Share your dining experience with
             us on social media or leave a review to help others discover the
-            Savoria experience.
+            bigbro experience.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
             <div className="flex items-center space-x-2 bg-card px-4 py-2 rounded-lg">
               <Icon name="Instagram" size={20} className="text-accent" />
               <span className="font-body text-sm text-foreground">
-                @savoria_restaurant
+                @bigbro_restaurant
               </span>
             </div>
             <div className="flex items-center space-x-2 bg-card px-4 py-2 rounded-lg">
               <Icon name="Facebook" size={20} className="text-accent" />
               <span className="font-body text-sm text-foreground">
-                Savoria Restaurant
+                bigbro Restaurant
               </span>
             </div>
             <div className="flex items-center space-x-2 bg-card px-4 py-2 rounded-lg">

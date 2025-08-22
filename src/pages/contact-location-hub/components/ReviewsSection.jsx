@@ -31,7 +31,7 @@ const ReviewsSection = () => {
       rating: 5,
       date: '2024-08-10',
       title: 'Exceptional dining experience!',
-      content: `Savoria exceeded all expectations! The ambiance is perfect for a special occasion, and the service was impeccable. Chef Isabella's seasonal menu was absolutely divine - every dish was a work of art. The wine pairing recommendations from Sarah were spot-on. We'll definitely be returning for our anniversary next year!`,
+      content: `bigbro exceeded all expectations! The ambiance is perfect for a special occasion, and the service was impeccable. Chef Isabella's seasonal menu was absolutely divine - every dish was a work of art. The wine pairing recommendations from Sarah were spot-on. We'll definitely be returning for our anniversary next year!`,
       helpful: 23,
       verified: true,
       response: {
@@ -48,7 +48,7 @@ const ReviewsSection = () => {
       rating: 5,
       date: '2024-08-08',
       title: 'Perfect for business dinners',
-      content: `I've hosted several business dinners at Savoria, and it never disappoints. The private dining room is elegant and provides the perfect atmosphere for important conversations. The staff is professional and attentive without being intrusive. The menu offers something for everyone, including excellent vegetarian options.`,
+      content: `I've hosted several business dinners at bigbro, and it never disappoints. The private dining room is elegant and provides the perfect atmosphere for important conversations. The staff is professional and attentive without being intrusive. The menu offers something for everyone, including excellent vegetarian options.`,
       helpful: 18,
       verified: true
     },
@@ -71,7 +71,7 @@ const ReviewsSection = () => {
       rating: 4,
       date: '2024-08-04',
       title: 'Great atmosphere, minor wait time',
-      content: `Savoria has a wonderful atmosphere and the food quality is excellent. We had a slight wait despite our reservation, but the staff was apologetic and offered complimentary appetizers. The main courses were outstanding, particularly the seafood dishes. Would recommend making reservations well in advance.`,
+      content: `bigbro has a wonderful atmosphere and the food quality is excellent. We had a slight wait despite our reservation, but the staff was apologetic and offered complimentary appetizers. The main courses were outstanding, particularly the seafood dishes. Would recommend making reservations well in advance.`,
       helpful: 12,
       verified: true
     },
@@ -83,7 +83,7 @@ const ReviewsSection = () => {
       rating: 5,
       date: '2024-08-02',
       title: 'Dietary restrictions handled perfectly',
-      content: `As someone with multiple food allergies, I was nervous about dining out. The staff at Savoria went above and beyond to accommodate my needs. Chef Isabella personally came out to discuss options, and they created a modified version of their signature dish that was absolutely delicious. Truly exceptional service!`,
+      content: `As someone with multiple food allergies, I was nervous about dining out. The staff at bigbro went above and beyond to accommodate my needs. Chef Isabella personally came out to discuss options, and they created a modified version of their signature dish that was absolutely delicious. Truly exceptional service!`,
       helpful: 28,
       verified: true
     },
@@ -95,7 +95,7 @@ const ReviewsSection = () => {
       rating: 5,
       date: '2024-07-30',
       title: 'Wine selection is incredible',
-      content: `The wine program at Savoria is outstanding. Sarah, the sommelier, has curated an impressive selection that perfectly complements the menu. Her knowledge and passion for wine really enhanced our dining experience. The food was exceptional as well - every course was perfectly executed.`,
+      content: `The wine program at bigbro is outstanding. Sarah, the sommelier, has curated an impressive selection that perfectly complements the menu. Her knowledge and passion for wine really enhanced our dining experience. The food was exceptional as well - every course was perfectly executed.`,
       helpful: 20,
       verified: true
     }
@@ -143,7 +143,7 @@ const ReviewsSection = () => {
       <div className="bg-gradient-to-r from-primary to-secondary p-6 text-white">
         <h2 className="text-3xl font-heading font-bold mb-2">Guest Reviews</h2>
         <p className="text-white/90 leading-relaxed">
-          See what our guests are saying about their Savoria experience
+          See what our guests are saying about their bigbro experience
         </p>
       </div>
       {/* Overall Ratings Summary */}
@@ -301,12 +301,12 @@ const ReviewsSection = () => {
             Share Your Experience
           </h4>
           <p className="text-muted-foreground mb-4">
-            Help others discover Savoria by sharing your dining experience
+            Help others discover bigbro by sharing your dining experience
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Button
               variant="outline"
-              onClick={() => window.open('https://g.page/r/savoria-restaurant/review', '_blank')}
+              onClick={() => window.open('https://g.page/r/bigbro-restaurant/review', '_blank')}
               iconName="Star"
               iconPosition="left"
             >
@@ -314,7 +314,7 @@ const ReviewsSection = () => {
             </Button>
             <Button
               variant="outline"
-              onClick={() => window.open('https://yelp.com/biz/savoria-restaurant', '_blank')}
+              onClick={() => window.open('https://yelp.com/biz/bigbro-restaurant', '_blank')}
               iconName="MessageSquare"
               iconPosition="left"
             >

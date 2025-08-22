@@ -13,7 +13,7 @@ const IngredientSourcingSection = () => {
       specialty: "Organic Vegetables & Herbs",
       image: "https://images.pexels.com/photos/1459339/pexels-photo-1459339.jpeg?auto=compress&cs=tinysrgb&w=800",
       partnership: "5 years",
-      testimonial: "Working with Savoria has been incredible. Chef Isabella truly understands the value of fresh, seasonal produce and respects our farming practices.",
+      testimonial: "Working with bigbro has been incredible. Chef Isabella truly understands the value of fresh, seasonal produce and respects our farming practices.",
       owner: "Maria Rodriguez",
       products: ["Heirloom Tomatoes", "Fresh Basil", "Seasonal Greens", "Root Vegetables"]
     },
@@ -24,7 +24,7 @@ const IngredientSourcingSection = () => {
       specialty: "Sustainable Seafood",
       image: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800",
       partnership: "3 years",
-      testimonial: "Savoria\'s commitment to sustainable sourcing aligns perfectly with our mission. They understand the importance of responsible fishing practices.",
+      testimonial: "bigbro\'s commitment to sustainable sourcing aligns perfectly with our mission. They understand the importance of responsible fishing practices.",
       owner: "Captain James Wilson",
       products: ["Wild Salmon", "Dungeness Crab", "Local Rockfish", "Seasonal Shellfish"]
     },

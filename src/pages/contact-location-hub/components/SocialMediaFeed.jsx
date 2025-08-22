@@ -20,7 +20,7 @@ const SocialMediaFeed = () => {
       id: 'instagram',
       name: 'Instagram',
       icon: 'Instagram',
-      handle: '@savoria_restaurant',
+      handle: '@bigbro_restaurant',
       followers: '12.5K',
       color: 'from-pink-500 to-purple-600'
     },
@@ -28,7 +28,7 @@ const SocialMediaFeed = () => {
       id: 'facebook',
       name: 'Facebook',
       icon: 'Facebook',
-      handle: 'Savoria Restaurant',
+      handle: 'bigbro Restaurant',
       followers: '8.2K',
       color: 'from-blue-600 to-blue-700'
     },
@@ -36,7 +36,7 @@ const SocialMediaFeed = () => {
       id: 'twitter',
       name: 'Twitter',
       icon: 'Twitter',
-      handle: '@savoria_nyc',
+      handle: '@bigbro_nyc',
       followers: '5.8K',
       color: 'from-blue-400 to-blue-500'
     }
@@ -50,7 +50,7 @@ const SocialMediaFeed = () => {
       likes: 234,
       comments: 18,
       timeAgo: '2 hours ago',
-      hashtags: ['#DuckSpecial', '#SeasonalMenu', '#SavoriaExperience']
+      hashtags: ['#DuckSpecial', '#SeasonalMenu', '#bigbroExperience']
     },
     {
       id: 2,
@@ -131,9 +131,9 @@ const SocialMediaFeed = () => {
 
   const handleSocialLink = (platform) => {
     const urls = {
-      instagram: 'https://instagram.com/savoria_restaurant',
-      facebook: 'https://facebook.com/savoria.restaurant',
-      twitter: 'https://twitter.com/savoria_nyc'
+      instagram: 'https://instagram.com/bigbro_restaurant',
+      facebook: 'https://facebook.com/bigbro.restaurant',
+      twitter: 'https://twitter.com/bigbro_nyc'
     };
     window.open(urls?.[platform], '_blank');
   };
@@ -316,10 +316,10 @@ const SocialMediaFeed = () => {
       <div className="bg-muted/30 border-t border-border p-6">
         <div className="text-center">
           <h4 className="font-heading font-semibold text-foreground mb-2">
-            Share Your Savoria Experience
+            Share Your bigbro Experience
           </h4>
           <p className="text-muted-foreground mb-4">
-            Tag us in your photos and use #SavoriaExperience to be featured on our feed!
+            Tag us in your photos and use #bigbroExperience to be featured on our feed!
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {socialPlatforms?.map((platform) => (

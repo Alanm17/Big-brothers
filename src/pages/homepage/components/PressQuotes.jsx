@@ -9,7 +9,7 @@ const PressQuotes = () => {
     {
       id: 1,
       quote:
-        "Savoria elevates neighborhood dining to an art form. Every dish tells a story of passion, precision, and exceptional taste. This is destination dining at its finest.",
+        "bigbro elevates neighborhood dining to an art form. Every dish tells a story of passion, precision, and exceptional taste. This is destination dining at its finest.",
       author: "James Morrison",
       publication: "City Food & Wine Magazine",
       rating: "★★★★★",
@@ -20,7 +20,7 @@ const PressQuotes = () => {
     {
       id: 2,
       quote:
-        "Chef Marcus Rodriguez has created something truly special at Savoria. The perfect balance of innovation and tradition makes every meal an unforgettable experience.",
+        "Chef Marcus Rodriguez has created something truly special at bigbro. The perfect balance of innovation and tradition makes every meal an unforgettable experience.",
       author: "Sarah Chen",
       publication: "Metropolitan Dining Review",
       rating: "★★★★★",
@@ -31,7 +31,7 @@ const PressQuotes = () => {
     {
       id: 3,
       quote:
-        "From the warm ambiance to the exceptional service, Savoria delivers on every front. This restaurant has quickly become the gold standard for fine dining in our city.",
+        "From the warm ambiance to the exceptional service, bigbro delivers on every front. This restaurant has quickly become the gold standard for fine dining in our city.",
       author: "Robert Williams",
       publication: "Gourmet Today",
       rating: "★★★★★",
@@ -42,7 +42,7 @@ const PressQuotes = () => {
     {
       id: 4,
       quote:
-        "Savoria's commitment to local sourcing and sustainable practices, combined with their culinary excellence, makes them a standout in today's dining landscape.",
+        "bigbro's commitment to local sourcing and sustainable practices, combined with their culinary excellence, makes them a standout in today's dining landscape.",
       author: "Maria Rodriguez",
       publication: "Sustainable Eats Weekly",
       rating: "★★★★★",
@@ -106,7 +106,7 @@ const PressQuotes = () => {
             What Critics Are Saying
           </h2>
           <p className="text-lg text-muted-foreground font-body max-w-2xl mx-auto">
-            Savoria has earned recognition from leading food critics and
+            bigbro has earned recognition from leading food critics and
             publications for our commitment to culinary excellence and
             exceptional dining experiences.
           </p>

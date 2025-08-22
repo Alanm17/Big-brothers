@@ -1,8 +1,8 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import Icon from '../../../components/AppIcon';
-import Image from '../../../components/AppImage';
-import Button from '../../../components/ui/Button';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Icon from "../../../components/AppIcon";
+import Image from "../../../components/AppImage";
+import Button from "../../../components/ui/Button";
 
 const StoryPreview = () => {
   const navigate = useNavigate();
@@ -11,21 +11,24 @@ const StoryPreview = () => {
     {
       id: 1,
       title: "Tradition Meets Innovation",
-      description: "Our culinary philosophy blends time-honored techniques with contemporary creativity",
-      icon: "Heart"
+      description:
+        "Our culinary philosophy blends time-honored techniques with contemporary creativity",
+      icon: "Heart",
     },
     {
       id: 2,
       title: "Local Sourcing",
-      description: "We partner with local farms and suppliers to bring you the freshest seasonal ingredients",
-      icon: "Leaf"
+      description:
+        "We partner with local farms and suppliers to bring you the freshest seasonal ingredients",
+      icon: "Leaf",
     },
     {
       id: 3,
       title: "Passionate Craftsmanship",
-      description: "Every dish is crafted with meticulous attention to detail and genuine love for the culinary arts",
-      icon: "Award"
-    }
+      description:
+        "Every dish is crafted with meticulous attention to detail and genuine love for the culinary arts",
+      icon: "Award",
+    },
   ];
 
   return (
@@ -37,13 +40,19 @@ const StoryPreview = () => {
             <div>
               <div className="inline-flex items-center space-x-2 bg-primary/10 px-4 py-2 rounded-full mb-6">
                 <Icon name="BookOpen" size={20} className="text-primary" />
-                <span className="text-primary font-body font-medium">Our Story</span>
+                <span className="text-primary font-body font-medium">
+                  Our Story
+                </span>
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
                 Where Culinary Dreams Come to Life
               </h2>
               <p className="text-lg text-muted-foreground font-body leading-relaxed mb-8">
-                Founded in 2018 with a simple vision: to create a dining experience that celebrates both the artistry of cooking and the joy of sharing exceptional food with loved ones. At Savoria, we believe that every meal should tell a story—one of passion, quality, and genuine hospitality.
+                Founded in 2018 with a simple vision: to create a dining
+                experience that celebrates both the artistry of cooking and the
+                joy of sharing exceptional food with loved ones. At bigbro, we
+                believe that every meal should tell a story—one of passion,
+                quality, and genuine hospitality.
               </p>
             </div>
 
@@ -52,7 +61,11 @@ const StoryPreview = () => {
               {storyHighlights?.map((highlight) => (
                 <div key={highlight?.id} className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
-                    <Icon name={highlight?.icon} size={24} className="text-accent" />
+                    <Icon
+                      name={highlight?.icon}
+                      size={24}
+                      className="text-accent"
+                    />
                   </div>
                   <div>
                     <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
@@ -76,15 +89,21 @@ const StoryPreview = () => {
                 </div>
                 <div>
                   <blockquote className="text-foreground font-body italic text-lg mb-3">
-                    "Cooking is not just about feeding the body—it's about nourishing the soul and creating memories that last a lifetime."
+                    "Cooking is not just about feeding the body—it's about
+                    nourishing the soul and creating memories that last a
+                    lifetime."
                   </blockquote>
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
                       <Icon name="ChefHat" size={20} className="text-white" />
                     </div>
                     <div>
-                      <p className="font-body font-semibold text-foreground">Chef Marcus Rodriguez</p>
-                      <p className="text-sm text-muted-foreground">Executive Chef & Co-Founder</p>
+                      <p className="font-body font-semibold text-foreground">
+                        Chef Marcus Rodriguez
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        Executive Chef & Co-Founder
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -95,7 +114,7 @@ const StoryPreview = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 variant="default"
-                onClick={() => navigate('/culinary-story-about')}
+                onClick={() => navigate("/culinary-story-about")}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-body font-semibold"
                 iconName="ArrowRight"
                 iconPosition="right"
@@ -104,7 +123,7 @@ const StoryPreview = () => {
               </Button>
               <Button
                 variant="outline"
-                onClick={() => navigate('/dining-experience-gallery')}
+                onClick={() => navigate("/dining-experience-gallery")}
                 className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-body font-semibold"
                 iconName="Camera"
                 iconPosition="left"
@@ -122,7 +141,7 @@ const StoryPreview = () => {
                 <div className="aspect-[16/10] overflow-hidden">
                   <Image
                     src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&h=500&q=80"
-                    alt="Savoria dining room atmosphere"
+                    alt="bigbro dining room atmosphere"
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                   />
                 </div>
@@ -154,8 +173,12 @@ const StoryPreview = () => {
             {/* Floating Stats */}
             <div className="absolute -bottom-8 -right-8 bg-white rounded-2xl shadow-brand p-6 border border-border">
               <div className="text-center">
-                <div className="text-2xl font-heading font-bold text-primary mb-1">6+</div>
-                <div className="text-sm font-body text-muted-foreground">Years of Excellence</div>
+                <div className="text-2xl font-heading font-bold text-primary mb-1">
+                  6+
+                </div>
+                <div className="text-sm font-body text-muted-foreground">
+                  Years of Excellence
+                </div>
               </div>
             </div>
 

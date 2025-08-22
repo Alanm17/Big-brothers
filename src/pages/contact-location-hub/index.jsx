@@ -26,8 +26,8 @@ const ContactLocationHub = () => {
       icon: "Mail",
       title: "Email Us",
       description: "Send us a detailed message",
-      action: "mailto:hello@savoria.com",
-      actionText: "hello@savoria.com",
+      action: "mailto:hello@bigbro.com",
+      actionText: "hello@bigbro.com",
       available: "Response within 24 hours",
     },
 
@@ -73,7 +73,7 @@ const ContactLocationHub = () => {
           content="Get in touch with Big Brother's Burger. Find our location, contact information, and connect with our passionate team."
         />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://savoria.com/contact-location-hub" />
+        <link rel="canonical" href="https://bigbro.com/contact-location-hub" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Header />
@@ -289,7 +289,7 @@ const ContactLocationHub = () => {
                   </li>
                   <li className="flex items-center space-x-2">
                     <Icon name="Mail" size={14} />
-                    <span>hello@savoria.com</span>
+                    <span>hello@bigbro.com</span>
                   </li>
                 </ul>
               </div>
@@ -307,7 +307,7 @@ const ContactLocationHub = () => {
 
             <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
               <p className="text-white/70 text-sm">
-                © {new Date()?.getFullYear()} Savoria Restaurant. All rights
+                © {new Date()?.getFullYear()} bigbro Restaurant. All rights
                 reserved.
               </p>
               <div className="flex space-x-4 mt-4 md:mt-0">

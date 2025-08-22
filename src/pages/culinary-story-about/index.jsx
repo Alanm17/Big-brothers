@@ -32,8 +32,8 @@ const CulinaryStoryAbout = () => {
 
             <p className="text-xl lg:text-2xl text-muted-foreground font-body max-w-4xl mx-auto leading-relaxed mb-12">
               Discover the passion, craftsmanship, and community spirit that
-              defines Savoria. From our chef's journey to our commitment to
-              local sourcing, every element tells the story of our dedication to
+              defines bigbro. From our chef's journey to our commitment to local
+              sourcing, every element tells the story of our dedication to
               culinary excellence.
             </p>
 
@@ -79,7 +79,7 @@ const CulinaryStoryAbout = () => {
           <p className="text-xl text-white/90 font-body leading-relaxed mb-10">
             Every dish we serve carries the essence of our journey, our values,
             and our commitment to creating memorable dining experiences. Join us
-            and become part of the Savoria story.
+            and become part of the bigbro story.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -107,7 +107,7 @@ const CulinaryStoryAbout = () => {
                   <Icon name="ChefHat" size={24} color="white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-heading font-bold">Savoria</h3>
+                  <h3 className="text-xl font-heading font-bold">bigbro</h3>
                   <p className="text-sm opacity-80">Restaurant</p>
                 </div>
               </div>
@@ -158,7 +158,7 @@ const CulinaryStoryAbout = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="Mail" size={16} />
-                  <span>hello@savoria.com</span>
+                  <span>hello@bigbro.com</span>
                 </div>
               </div>
             </div>
@@ -166,7 +166,7 @@ const CulinaryStoryAbout = () => {
 
           <div className="border-t border-background/20 mt-8 pt-8 text-center">
             <p className="text-background/60 font-body text-sm">
-              © {new Date()?.getFullYear()} Savoria Restaurant. All rights
+              © {new Date()?.getFullYear()} bigbro Restaurant. All rights
               reserved.
             </p>
           </div>
