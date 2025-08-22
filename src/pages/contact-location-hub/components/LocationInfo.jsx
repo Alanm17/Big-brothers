@@ -1,87 +1,96 @@
-import React, { useState } from 'react';
-import Icon from '../../../components/AppIcon';
-import Button from '../../../components/ui/Button';
+import React, { useState } from "react";
+import Icon from "../../../components/AppIcon";
+import Button from "../../../components/ui/Button";
 
 const LocationInfo = () => {
-  const [activeTab, setActiveTab] = useState('location');
+  const [activeTab, setActiveTab] = useState("location");
 
   const operatingHours = [
-    { day: 'Monday', hours: '5:00 PM - 10:00 PM', isToday: false },
-    { day: 'Tuesday', hours: '5:00 PM - 10:00 PM', isToday: false },
-    { day: 'Wednesday', hours: '5:00 PM - 10:00 PM', isToday: true },
-    { day: 'Thursday', hours: '5:00 PM - 10:00 PM', isToday: false },
-    { day: 'Friday', hours: '5:00 PM - 11:00 PM', isToday: false },
-    { day: 'Saturday', hours: '4:00 PM - 11:00 PM', isToday: false },
-    { day: 'Sunday', hours: '4:00 PM - 9:00 PM', isToday: false }
+    { day: "Monday", hours: "5:00 PM - 10:00 PM", isToday: false },
+    { day: "Tuesday", hours: "5:00 PM - 10:00 PM", isToday: false },
+    { day: "Wednesday", hours: "5:00 PM - 10:00 PM", isToday: true },
+    { day: "Thursday", hours: "5:00 PM - 10:00 PM", isToday: false },
+    { day: "Friday", hours: "5:00 PM - 11:00 PM", isToday: false },
+    { day: "Saturday", hours: "4:00 PM - 11:00 PM", isToday: false },
+    { day: "Sunday", hours: "4:00 PM - 9:00 PM", isToday: false },
   ];
 
   const contactMethods = [
     {
-      icon: 'Phone',
-      title: 'Phone',
-      primary: '(555) 123-4567',
-      secondary: 'Main dining room',
-      action: 'tel:+15551234567',
-      actionText: 'Call Now'
+      icon: "Phone",
+      title: "Phone",
+      primary: "(555) 123-4567",
+      secondary: "Main dining room",
+      action: "tel:+15551234567",
+      actionText: "Call Now",
     },
     {
-      icon: 'Mail',
-      title: 'Email',
-      primary: 'hello@bigbro.com',
-      secondary: 'General inquiries',
-      action: 'mailto:hello@bigbro.com',
-      actionText: 'Send Email'
+      icon: "Mail",
+      title: "Email",
+      primary: "hello@bigbro.com",
+      secondary: "General inquiries",
+      action: "mailto:hello@bigbro.com",
+      actionText: "Send Email",
     },
     {
-      icon: 'Calendar',
-      title: 'Reservations',
-      primary: '(555) 123-4568',
-      secondary: 'Booking & events',
-      action: 'tel:+15551234568',
-      actionText: 'Call to Book'
-    }
+      icon: "Calendar",
+      title: "Reservations",
+      primary: "01034275553",
+      secondary: "Booking & events",
+      action: "tel:+01034275553",
+      actionText: "Call to Book",
+    },
   ];
 
   const accessibilityFeatures = [
     {
-      icon: 'Accessibility',
-      title: 'Wheelchair Accessible',
-      description: 'Full wheelchair access with ramp entrance and accessible restrooms'
+      icon: "Accessibility",
+      title: "Wheelchair Accessible",
+      description:
+        "Full wheelchair access with ramp entrance and accessible restrooms",
     },
     {
-      icon: 'Car',
-      title: 'Valet Parking',
-      description: 'Complimentary valet service available Thursday through Sunday'
+      icon: "Car",
+      title: "Valet Parking",
+      description:
+        "Complimentary valet service available Thursday through Sunday",
     },
     {
-      icon: 'Volume2',
-      title: 'Hearing Assistance',
-      description: 'Assistive listening devices available upon request'
+      icon: "Volume2",
+      title: "Hearing Assistance",
+      description: "Assistive listening devices available upon request",
     },
     {
-      icon: 'Eye',
-      title: 'Visual Accommodations',
-      description: 'Large print menus and braille menus available'
-    }
+      icon: "Eye",
+      title: "Visual Accommodations",
+      description: "Large print menus and braille menus available",
+    },
   ];
 
   const nearbyLandmarks = [
-    { name: 'Central Park', distance: '2 blocks north', icon: 'Trees' },
-    { name: 'Metro Station', distance: '1 block east', icon: 'Train' },
-    { name: 'Art Museum', distance: '3 blocks south', icon: 'Palette' },
-    { name: 'Shopping District', distance: '4 blocks west', icon: 'ShoppingBag' }
+    { name: "Central Park", distance: "2 blocks north", icon: "Trees" },
+    { name: "Metro Station", distance: "1 block east", icon: "Train" },
+    { name: "Art Museum", distance: "3 blocks south", icon: "Palette" },
+    {
+      name: "Shopping District",
+      distance: "4 blocks west",
+      icon: "ShoppingBag",
+    },
   ];
 
   const tabs = [
-    { id: 'location', label: 'Location', icon: 'MapPin' },
-    { id: 'hours', label: 'Hours', icon: 'Clock' },
-    { id: 'accessibility', label: 'Accessibility', icon: 'Accessibility' }
+    { id: "location", label: "Location", icon: "MapPin" },
+    { id: "hours", label: "Hours", icon: "Clock" },
+    { id: "accessibility", label: "Accessibility", icon: "Accessibility" },
   ];
 
   const handleDirections = () => {
-    const address = "123 Culinary Avenue, Downtown District, New York, NY 10001";
+    const address = "149-6, Gunja-dong, Gwangjin-gu, Seoul, South Korea";
     const encodedAddress = encodeURIComponent(address);
-    window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`, '_blank');
+    window.open(
+      `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`,
+      "_blank"
+    );
   };
 
   return (
@@ -90,7 +99,8 @@ const LocationInfo = () => {
       <div className="bg-gradient-to-r from-primary to-accent p-6 text-white">
         <h2 className="text-3xl font-heading font-bold mb-2">Visit bigbro</h2>
         <p className="text-white/90 leading-relaxed">
-          Located in the heart of downtown, we're easily accessible by car or public transit
+          Located in the heart of downtown, we're easily accessible by car or
+          public transit
         </p>
       </div>
       {/* Tab Navigation */}
@@ -102,7 +112,8 @@ const LocationInfo = () => {
               onClick={() => setActiveTab(tab?.id)}
               className={`flex items-center space-x-2 px-6 py-4 font-medium transition-all duration-200 whitespace-nowrap ${
                 activeTab === tab?.id
-                  ? 'text-primary border-b-2 border-primary bg-primary/5' :'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                  ? "text-primary border-b-2 border-primary bg-primary/5"
+                  : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
               }`}
             >
               <Icon name={tab?.icon} size={18} />
@@ -113,7 +124,7 @@ const LocationInfo = () => {
       </div>
       {/* Tab Content */}
       <div className="p-6">
-        {activeTab === 'location' && (
+        {activeTab === "location" && (
           <div className="space-y-8">
             {/* Address & Map */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -124,11 +135,21 @@ const LocationInfo = () => {
                   </h3>
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
-                      <Icon name="MapPin" size={20} className="text-primary mt-1" />
+                      <Icon
+                        name="MapPin"
+                        size={20}
+                        className="text-primary mt-1"
+                      />
                       <div>
-                        <p className="font-medium text-foreground">123 Culinary Avenue</p>
-                        <p className="text-muted-foreground">Downtown District</p>
-                        <p className="text-muted-foreground">New York, NY 10001</p>
+                        <p className="font-medium text-foreground">
+                          123 Culinary Avenue
+                        </p>
+                        <p className="text-muted-foreground">
+                          Downtown District
+                        </p>
+                        <p className="text-muted-foreground">
+                          New York, NY 10001
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -146,7 +167,9 @@ const LocationInfo = () => {
                   </Button>
                   <Button
                     variant="outline"
-                    onClick={() => window.open('https://maps.google.com', '_blank')}
+                    onClick={() =>
+                      window.open("https://maps.google.com", "_blank")
+                    }
                     iconName="ExternalLink"
                     iconPosition="left"
                   >
@@ -160,20 +183,31 @@ const LocationInfo = () => {
                     Contact Information
                   </h4>
                   {contactMethods?.map((method, index) => (
-                    <div key={index} className="flex items-center justify-between p-4 bg-muted/30 rounded-lg">
+                    <div
+                      key={index}
+                      className="flex items-center justify-between p-4 bg-muted/30 rounded-lg"
+                    >
                       <div className="flex items-center space-x-3">
                         <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                          <Icon name={method?.icon} size={18} className="text-primary" />
+                          <Icon
+                            name={method?.icon}
+                            size={18}
+                            className="text-primary"
+                          />
                         </div>
                         <div>
-                          <p className="font-medium text-foreground">{method?.primary}</p>
-                          <p className="text-sm text-muted-foreground">{method?.secondary}</p>
+                          <p className="font-medium text-foreground">
+                            {method?.primary}
+                          </p>
+                          <p className="text-sm text-muted-foreground">
+                            {method?.secondary}
+                          </p>
                         </div>
                       </div>
                       <Button
                         variant="ghost"
                         size="sm"
-                        onClick={() => window.open(method?.action, '_self')}
+                        onClick={() => window.open(method?.action, "_self")}
                         iconName="ExternalLink"
                         iconPosition="right"
                       >
@@ -206,14 +240,24 @@ const LocationInfo = () => {
 
                 {/* Nearby Landmarks */}
                 <div className="bg-muted/30 rounded-lg p-4">
-                  <h4 className="font-medium text-foreground mb-3">Nearby Landmarks</h4>
+                  <h4 className="font-medium text-foreground mb-3">
+                    Nearby Landmarks
+                  </h4>
                   <div className="grid grid-cols-2 gap-3">
                     {nearbyLandmarks?.map((landmark, index) => (
                       <div key={index} className="flex items-center space-x-2">
-                        <Icon name={landmark?.icon} size={14} className="text-primary" />
+                        <Icon
+                          name={landmark?.icon}
+                          size={14}
+                          className="text-primary"
+                        />
                         <div>
-                          <p className="text-sm font-medium text-foreground">{landmark?.name}</p>
-                          <p className="text-xs text-muted-foreground">{landmark?.distance}</p>
+                          <p className="text-sm font-medium text-foreground">
+                            {landmark?.name}
+                          </p>
+                          <p className="text-xs text-muted-foreground">
+                            {landmark?.distance}
+                          </p>
                         </div>
                       </div>
                     ))}
@@ -224,7 +268,7 @@ const LocationInfo = () => {
           </div>
         )}
 
-        {activeTab === 'hours' && (
+        {activeTab === "hours" && (
           <div className="space-y-6">
             <div>
               <h3 className="text-xl font-heading font-bold text-foreground mb-4">
@@ -236,16 +280,19 @@ const LocationInfo = () => {
                     key={index}
                     className={`flex items-center justify-between p-4 rounded-lg transition-all duration-200 ${
                       schedule?.isToday
-                        ? 'bg-primary/10 border border-primary/20' :'bg-muted/30 hover:bg-muted/50'
+                        ? "bg-primary/10 border border-primary/20"
+                        : "bg-muted/30 hover:bg-muted/50"
                     }`}
                   >
                     <div className="flex items-center space-x-3">
                       {schedule?.isToday && (
                         <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
                       )}
-                      <span className={`font-medium ${
-                        schedule?.isToday ? 'text-primary' : 'text-foreground'
-                      }`}>
+                      <span
+                        className={`font-medium ${
+                          schedule?.isToday ? "text-primary" : "text-foreground"
+                        }`}
+                      >
                         {schedule?.day}
                         {schedule?.isToday && (
                           <span className="ml-2 text-xs bg-primary text-white px-2 py-1 rounded-full">
@@ -254,9 +301,13 @@ const LocationInfo = () => {
                         )}
                       </span>
                     </div>
-                    <span className={`font-mono ${
-                      schedule?.isToday ? 'text-primary font-semibold' : 'text-muted-foreground'
-                    }`}>
+                    <span
+                      className={`font-mono ${
+                        schedule?.isToday
+                          ? "text-primary font-semibold"
+                          : "text-muted-foreground"
+                      }`}
+                    >
                       {schedule?.hours}
                     </span>
                   </div>
@@ -269,12 +320,16 @@ const LocationInfo = () => {
               <div className="flex items-start space-x-3">
                 <Icon name="Info" size={20} className="text-accent mt-0.5" />
                 <div>
-                  <h4 className="font-medium text-foreground mb-2">Special Hours & Holidays</h4>
+                  <h4 className="font-medium text-foreground mb-2">
+                    Special Hours & Holidays
+                  </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Holiday hours may vary - please call ahead</li>
                     <li>• Last seating is 30 minutes before closing</li>
                     <li>• Private events may affect regular hours</li>
-                    <li>• Kitchen closes 15 minutes before restaurant closing</li>
+                    <li>
+                      • Kitchen closes 15 minutes before restaurant closing
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -293,26 +348,36 @@ const LocationInfo = () => {
           </div>
         )}
 
-        {activeTab === 'accessibility' && (
+        {activeTab === "accessibility" && (
           <div className="space-y-6">
             <div>
               <h3 className="text-xl font-heading font-bold text-foreground mb-4">
                 Accessibility Features
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                We're committed to providing an inclusive dining experience for all our guests. 
-                Our restaurant is fully accessible and we're happy to accommodate special needs.
+                We're committed to providing an inclusive dining experience for
+                all our guests. Our restaurant is fully accessible and we're
+                happy to accommodate special needs.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {accessibilityFeatures?.map((feature, index) => (
-                <div key={index} className="flex items-start space-x-4 p-4 bg-muted/30 rounded-lg">
+                <div
+                  key={index}
+                  className="flex items-start space-x-4 p-4 bg-muted/30 rounded-lg"
+                >
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Icon name={feature?.icon} size={20} className="text-primary" />
+                    <Icon
+                      name={feature?.icon}
+                      size={20}
+                      className="text-primary"
+                    />
                   </div>
                   <div>
-                    <h4 className="font-medium text-foreground mb-2">{feature?.title}</h4>
+                    <h4 className="font-medium text-foreground mb-2">
+                      {feature?.title}
+                    </h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       {feature?.description}
                     </p>
@@ -330,27 +395,39 @@ const LocationInfo = () => {
                 <div className="flex items-start space-x-3">
                   <Icon name="Users" size={18} className="text-primary mt-1" />
                   <div>
-                    <p className="font-medium text-foreground">Service Animals Welcome</p>
+                    <p className="font-medium text-foreground">
+                      Service Animals Welcome
+                    </p>
                     <p className="text-sm text-muted-foreground">
                       Service animals are always welcome in our dining room
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <Icon name="Utensils" size={18} className="text-primary mt-1" />
+                  <Icon
+                    name="Utensils"
+                    size={18}
+                    className="text-primary mt-1"
+                  />
                   <div>
-                    <p className="font-medium text-foreground">Dietary Accommodations</p>
+                    <p className="font-medium text-foreground">
+                      Dietary Accommodations
+                    </p>
                     <p className="text-sm text-muted-foreground">
-                      Our chefs can modify dishes for allergies and dietary restrictions
+                      Our chefs can modify dishes for allergies and dietary
+                      restrictions
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Icon name="Phone" size={18} className="text-primary mt-1" />
                   <div>
-                    <p className="font-medium text-foreground">Advance Notice Appreciated</p>
+                    <p className="font-medium text-foreground">
+                      Advance Notice Appreciated
+                    </p>
                     <p className="text-sm text-muted-foreground">
-                      Please call ahead for specific accommodations to ensure the best experience
+                      Please call ahead for specific accommodations to ensure
+                      the best experience
                     </p>
                   </div>
                 </div>
@@ -361,7 +438,7 @@ const LocationInfo = () => {
             <div className="text-center">
               <Button
                 variant="outline"
-                onClick={() => window.open('tel:+15551234567', '_self')}
+                onClick={() => window.open("tel:+15551234567", "_self")}
                 iconName="Phone"
                 iconPosition="left"
               >
