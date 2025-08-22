@@ -301,9 +301,9 @@ const ReservationsBookingHub = () => {
                       <Icon name="MapPin" size={24} className="text-accent" />
                       <h4 className="font-medium text-foreground">Location</h4>
                       <p className="text-sm text-muted-foreground">
-                        123 Culinary Street
+                        149-6, Gunja-dong
                         <br />
-                        Downtown District
+                        Seoul, South Korea
                       </p>
                     </div>
                   </div>

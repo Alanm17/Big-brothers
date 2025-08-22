@@ -142,13 +142,11 @@ const LocationInfo = () => {
                       />
                       <div>
                         <p className="font-medium text-foreground">
-                          123 Culinary Avenue
+                          149-6, Gunja-dong
                         </p>
+                        <p className="text-muted-foreground">Gwangjin-gu</p>
                         <p className="text-muted-foreground">
-                          Downtown District
-                        </p>
-                        <p className="text-muted-foreground">
-                          New York, NY 10001
+                          Seoul, South Korea
                         </p>
                       </div>
                     </div>
@@ -230,7 +228,7 @@ const LocationInfo = () => {
                     loading="lazy"
                     title="bigbro Restaurant Location"
                     referrerPolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps?q=40.7589,-73.9851&z=15&output=embed"
+                    src="https://www.google.com/maps?q=37.5379,127.0821&z=15&output=embed"
                     className="border-0"
                   />
                   <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-2">
