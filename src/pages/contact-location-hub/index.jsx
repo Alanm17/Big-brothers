@@ -84,7 +84,10 @@ const ContactLocationHub = () => {
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Icon name="MapPin" size={16} />
-                <span>Located in Downtown District</span>
+                <span>
+                  Located in 2nd Floor, 149-6, Gunja-dong, Gwangjin-gu, Seoul,
+                  South Korea
+                </span>
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6 leading-tight">
